@@ -1,0 +1,12 @@
+@mixin div-content-collapse
+  cursor: pointer
+  display: block
+
+  + input
+    display: none
+
+    + div
+      display: none
+
+    &:checked + div
+      display: block
